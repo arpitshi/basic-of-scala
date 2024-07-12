@@ -30,4 +30,18 @@ object HOF extends App{
   println(plusten(1))
   println(plusten(2))
   println(plusten(3))
+
+  val nestedList = List(List(1, 2), List(3, 4), List(5))
+
+  // Using flatMap to flatten the list and double each element
+  val flatAndDoubled = nestedList.flatMap(x => x.map(_ * 2))
+  println(flatAndDoubled)
+
+  def applyTwice[A](f: A => A, x: A): A = {
+    f(f(x))
+  }
+
+  val increment = (x: Int) => x + 1
+  println(applyTwice(increment, 5)) 
+
 }
