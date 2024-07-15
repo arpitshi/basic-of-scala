@@ -43,7 +43,7 @@ object TupleAndMap extends App{
 
    val names = List("Bob","James","Roy","Angela","Rohan","Jonsan")
    println(names.groupBy(name => name.charAt(0)))
-   
+
 
 
 
