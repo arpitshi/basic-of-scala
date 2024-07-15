@@ -42,6 +42,6 @@ object HOF extends App{
   }
 
   val increment = (x: Int) => x + 1
-  println(applyTwice(increment, 5)) 
+  println(applyTwice(increment, 5))
 
 }
